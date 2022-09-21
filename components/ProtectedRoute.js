@@ -1,7 +1,6 @@
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-import Swal from "sweetalert2";
-import { useAuth } from "../context/AuthContext";
+import {useRouter} from "next/router";
+import {useEffect} from "react";
+import {useAuth} from "../context/AuthContext";
 
 const ProtectedRoute = ({ children }) => {
     const { user } = useAuth();
